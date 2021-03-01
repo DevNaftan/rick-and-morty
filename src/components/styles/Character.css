@@ -1,0 +1,40 @@
+.Character__card {
+  list-style: none;
+}
+
+.Character__card:hover {
+  cursor: pointer;
+}
+
+.Character__card:hover .Character__avatar img {
+  transform: scale(1.05);
+}
+
+.Character__avatar {
+  display: flex;
+  justify-content: center;
+  width: 250px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.Character__avatar img {
+  transition: transform var(--transition-time);
+}
+
+.Character__avatar figcaption {
+  display: flex;
+  position: absolute;
+  top: 85%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--light-color);
+  background-color: var(--bg-card-caption-color);
+}

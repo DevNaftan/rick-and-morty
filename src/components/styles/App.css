@@ -1,0 +1,41 @@
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  row-gap: 35px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  align-items: center;
+}
+
+.Characters__container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.btn {
+  width: 90%;
+  border: transparent;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--light-color);
+  outline: none;
+  background-color: var(--btn-color);
+  transition: background-color var(--transition-time);
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--btn-hover-color);
+}
+
+.error {
+  padding: 20px;
+  font-size: 1.8rem;
+  color: var(--light-color);
+}
