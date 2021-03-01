@@ -1,1 +1,1 @@
-"# Rick and Morty WebApp" 
+# Rick and Morty WebApp
