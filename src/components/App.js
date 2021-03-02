@@ -15,7 +15,7 @@ class App extends React.Component {
     data: [],
   };
 
-  async getCharacters() {
+  getCharacters = async () => {
     this.setState({ loading: true, error: null });
     try {
       const response = await fetch(
@@ -30,7 +30,7 @@ class App extends React.Component {
     } catch (error) {
       this.setState({ loading: false, error: error.message });
     }
-  }
+  };
 
   componentDidMount() {
     this.getCharacters();
@@ -60,11 +60,7 @@ class App extends React.Component {
           </ul>
 
           {!this.state.loading && (
-            <button
-              type='button'
-              className='btn'
-              onClick={() => this.getCharacters()}
-            >
+            <button type='button' className='btn' onClick={this.getCharacters}>
               Show more
             </button>
           )}
