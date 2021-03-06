@@ -3,5 +3,6 @@
 ### Run project
 ```
 cd rick-and-morty
+npm i
 npm start
 ```
