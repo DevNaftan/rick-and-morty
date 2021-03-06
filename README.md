@@ -1,2 +1,7 @@
 # Rick and Morty WebApp
-Shows characters from the TV series Rick and Morty
+
+### Run project
+```
+cd rick-and-morty
+npm start
+```
